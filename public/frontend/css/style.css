@@ -1,0 +1,174 @@
+body{
+    font-family: 'Montserrat',Arial,sans-serif;
+}
+.card {
+    border-radius: 8px;
+}
+
+label {
+    text-align: center;
+}
+
+body {
+    background: -webkit-linear-gradient(to right, #ecc56c, #ffac6e, #ff9482, #ff81a0, #f07ac2);
+    background: linear-gradient(to right, #ecc56c, #ffac6e, #ff9482, #ff81a0, #f07ac2);
+}
+
+.btn-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn-main {
+    color: #fff !important;
+    padding: 10px 20px;
+    background-color: #ff5722 !important;
+}
+
+.logo-row {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.profile {
+    height: 200px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.logo {
+    height: 75px;
+    text-align: center;
+}
+
+a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.bg-board {
+    background-color: white;
+    border-radius: 4px;
+    padding: 50px;
+}
+
+.p-bold {
+    font-weight: bold;
+}
+
+.font-red {
+    color: rgb(255, 0, 0);
+}
+
+.details {
+    padding-top: 83px;
+    list-style: none;
+}
+
+.card-container {
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 8px;
+    height: 100%;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 180px;
+    left: 10px;
+    color: #fff;
+}
+
+.al-heart {
+    padding: 10px;
+    float: left;
+}
+
+.al-date {
+    padding: 10px;
+    float: right;
+}
+
+.invalid-feedback {
+    display: inline !important;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+.drawer__footer button {
+    margin-left: 10px;
+  }
+  .radio-inline {
+    padding-right: 10px;
+  }
+/* MEDIA QUERIES */
+@media (max-width: 1440px) {
+    .bottom-right {
+        position: absolute;
+        bottom: 200px;
+        left: 10px;
+        color: #fff;
+    }
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .bottom-right {
+        position: absolute;
+        bottom: 150px;
+        left: 10px;
+        color: #fff;
+    }
+
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .logo-row {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .profile {
+        height: 150px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+/* TABLET */
+@media (max-width: 997px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+
+@media (max-width: 600px) {}
