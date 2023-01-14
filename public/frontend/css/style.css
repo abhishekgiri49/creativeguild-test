@@ -73,10 +73,18 @@ a {
 }
 
 .card {
+    position: relative;
     border-radius: 8px;
     height: 100%;
 }
-
+.card .close {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(253, 1, 1);
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+}
 .card-text {
     padding: 10px;
 }

@@ -39,7 +39,8 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col" v-for="(row, index) in rows" :key="row.id">
                 <div class="card">
-
+                  <span class="close" @click.prevent="destroy(index,row.id)"><i class="fa fa-trash" aria-hidden="true"></i>
+</span>
                   <img :src="'/uploads/album-images/' + row.image" class="card-img-top" :alt="row.title" />
                   <h3 class="bottom-right" @click="edit(index)">{{ row.title }}</h3>
                   <div class="card-body">
@@ -61,7 +62,7 @@
         </div>
       </div>
     </div>
-    <el-drawer v-model="showSidebar" title="Album" :before-close="toggle" direction="rtl" class="demo-drawer">
+    <el-drawer v-model="showSidebar" title="Album" :before-close="dismissSidebar" direction="rtl" class="demo-drawer">
       <div class="demo-drawer__content">
         <form>
           <div class="form-outline mb-4">
@@ -228,6 +229,7 @@ export default {
         })
         .then((response) => {
           this.dismissSidebar();
+          this.search();
           this.$swal({
               toast: true,
               position: "top-end",
@@ -268,8 +270,8 @@ export default {
       });
     },
 
-    toggle(visible) {
-      this.showSidebar = visible;
+    toggle() {
+      this.showSidebar = false;
     },
     opensidebar() {
       // this.showSidebar = true;

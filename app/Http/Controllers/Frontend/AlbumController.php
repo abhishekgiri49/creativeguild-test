@@ -88,6 +88,7 @@ class AlbumController extends FrontendController
     public function delete($id)
     {
         $album = $this->album->getAlbumById($id);
+        $dir = 'uploads/album-images/';
         if ($album->image != '' && File::exists($dir . $album->image)) {
             File::delete($dir . $album->image);}
         $album->delete();
