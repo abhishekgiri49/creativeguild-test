@@ -181,7 +181,7 @@ class ApiAuthController extends Controller
                 'title'=>$obj['title'],
                 'description'=>$obj['description'],
                 'image'=>$obj['img'],
-                'date'=>$obj['date'],
+                'date'=>date('Y-m-d',strtotime($obj['date'])),
                 'featured'=>$obj['featured'] ? '1' : '0'
             ];
             $this->album->create($data);
