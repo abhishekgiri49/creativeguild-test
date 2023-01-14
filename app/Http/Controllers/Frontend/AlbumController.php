@@ -79,6 +79,7 @@ class AlbumController extends FrontendController
                 request()->image->move(public_path('uploads/album-images'), $imageName);
                 $validatedData['image'] = $imageName;
             }
+            $validatedData['date'] = date('Y-m-d');
             $this->album->update($request->id, $validatedData);
             return response()->json(['status' => true, 'message' => '', 'body' => "Album Updated"], 200);
             
