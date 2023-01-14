@@ -141,10 +141,11 @@ a {
     }
     .bottom-right {
         position: absolute;
-        bottom: 150px;
+        bottom: 125px;
         left: 10px;
         color: #fff;
-    }
+        font-size: 15px;
+      }
 
     .card-text {
         white-space: nowrap;
@@ -170,6 +171,13 @@ a {
         flex: 0 0 auto;
         width: 50%;
     }
+    .bottom-right {
+        position: absolute;
+        bottom: 120px;
+        left: 10px;
+        color: #fff;
+        font-size: 15px;
+      }
 }
 
 @media (max-width: 768px) {
