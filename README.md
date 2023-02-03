@@ -13,6 +13,7 @@ adminstarter
 <code>php artisan key:generate</code><br><br>
 <code>php artisan migrate</code><br><br>
 <code>php artisan migrate:refresh --seed</code><br><br>
+<code>npm artisan passport:install</code><br><br>
 <code>npm install</code><br><br>
 <code>npm run watch</code><br><br>
 <code>php artisan serve --port=3000</code><br><br>
